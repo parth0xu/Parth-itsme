@@ -1,0 +1,248 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+.container{
+  background-color: rgba(0, 0, 0,0.01);
+}
+
+.intro {
+
+  display: flex;
+  width: 100%;
+  height: 100vh;  
+  font-weight: bold;
+  position: relative;
+  justify-content: top;
+  align-items: center;
+}
+
+.intro p{
+  color: rgb(180, 178, 178);
+  font-size: 18px;
+  opacity: 0.6;
+  margin: 20px;
+  border : 0px solid rgb(245, 240, 240);
+}
+
+.intro p:hover {
+ overflow: hidden;
+ display: fixed;
+}
+
+.intro p span:hover {
+ cursor: pointer;
+ background: -webkit-linear-gradient(rgb(151, 41, 41), rgb(48, 63, 201));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
+
+.clip {
+  position: absolute;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+  .clip{
+    width:100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9) {
+  .clip{
+    width:auto;
+    height: 100vh;
+  }
+}
+
+.login {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  justify-content: right;
+  align-items: right;
+  gap: 2px;
+  border:none;
+  outline:none;
+  padding-right: 150px;
+  backdrop-filter: blur(20px);
+}
+
+.login h1{
+  text-align: center;
+  font-size: 36px;
+  top:20px;
+}
+
+.login .input_box {
+  width:100%;
+  position: relative;
+  height: 50px;
+  margin:20px 0;
+
+}
+
+.input_box input{
+  width:100%;
+  height:100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  border: 2px solid rgba(24, 7, 206,0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #100404;
+  padding:20px 45px 20px 20px;
+}
+
+.input_box img{
+  right:20px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: black;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.login label .remember_me{
+  font-size: 8px;
+  margin-right: 2px;
+}
+
+.login label .forget{
+  font-size: 12px;
+  margin-left:25px;
+  color:#1e25ef;
+  outline:none;
+}
+
+.login .btn{
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline:none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color:#333;
+  font-weight: 600;
+}
+
+.login .signup{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+span{
+  width: 75px;
+  background: transparent;
+  border:none;
+  outline:none;
+  border: 2px solid rgba(24, 7, 206,0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding:10px 15px 10px 10px;
+}
+
+.icon {
+  display: inline-flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vh;
+  height: 50vh;
+  left: 35%;
+  animation: 3s spin ease-in-out 0.5s infinite alternate;
+}
+
+@keyframes spin{
+  0%{
+    
+  }
+  50%{
+       transform: rotateX(360deg) rotateY(180deg);
+       scale: 1;
+  }
+  100%{
+        scale:1;
+       transform:  rotate(360deg);        
+  }
+}
+
+.me {
+  position: absolute;
+  justify-content: space-between;
+  width: 40vh;
+  cursor: pointer;
+ left: 30px;
+  height: 30vh;
+  margin: 15px 15px;
+ border-radius: 100%;
+ box-shadow: 0 0 10px rgba(205, 202, 202, 0.1);
+ border: 2px solid rgba(237, 236, 241, 0.2);
+}
+
+.me1{
+  position: absolute;
+  justify-content: space-between;
+  width: 30vh;
+  height: 30vh;
+  top:68%;
+  left:6%;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+}
+
+.navbar{
+  justify-content: right;
+  align-items: right;
+  margin-top: 30px;
+  display: flex;
+ }
+
+
+.navbar a{
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: 0.3s;
+}
+
+.navbar a:hover{
+  color: #0ef;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top:100%;
+  left:0;
+  width:0;
+  height: 2px;
+  text-decoration: underline;
+  background: #fff;
+  transition: 0.3s;
+}
+
+navbar a:hover::before{
+  width:100%;
+  text-decoration: underline;
+  background: #0ef;
+}
