@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+        <meta charset="utf-8">
+           <meta content="width=device-width, initial-scale=1.0" name="viewport">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <meta http-equiv="refresh" content="10">
+               <meta name="robots" content="noindex, nofollow">
+                 <link rel="stylesheet" href="index.css">
+               <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+                <meta http-equiv="X-Content-Type-Options" content="nosniff">
+               <meta name="referrer" content="no-referrer">
+             <meta name="format-detection" content="telephone=no">
+           <meta name="google" content="notranslate"> 
+          <link rel="icon" href="icon.png">
+          <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+           <title>GameCraze</title>
+   </head>
+  <body>
+        <div class="container">
+          <video autoplay loop muted plays-inline class="clip">
+            <source src="g1.mp4" type="video/mp4">
+          </video>
+          
+          <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+          </nav>
+          
+
+        <div class="intro">
+            <p>Welcome to <span class="game"><a href="index.html">GameCraze</a></span>, where gaming passion meets community!<br> Dive into a world of thrilling 
+               games, expert reviews, and the latest <br>news from the gaming universe. Whether you’re a
+               hardcore gamer<br> or just starting out, we’ve got something for everyone. Join us for<br> guides,
+               tips, and discussions that fuel your love for gaming. <br>Level up you’re 
+               experience with GameCraze today!</p>
+             </div>   
+        </div>  
+      
+      <div class="login">
+        <img src="groom.png" class="me" title="ME">
+        <p class="me1">
+          Welcome,I am Parth Dabgar!<br>
+          I am a Web Developer, i just create
+          this site for fun! U can take idea and
+          implement! CONTACT ME on this gmail <u>dabgarparth21@gmail.com</u>
+        </p>
+        <img  class="icon" src="Icon_r.png" alt="logo_icon" title="GameCraze">
+        
+             <h1>User Login</h1>
+
+        <div class="input_box">
+           <input type="email" placeholder="Email" required>
+          <img src="user.png" alt="user">
+        </div>
+        <div  class="input_box">
+          <input type="password" placeholder="Password" required>
+          <img src="lock.png" alt="lock">
+        </div>
+        <div>
+          
+          <label><input type="checkbox" class="remember_me">Remember Me</label>
+          <label><a  class="forget" href="#">Forget Password?</a></label>
+        </div>
+        <div>
+         
+        </div>
+        <div>
+          <a href="#"><button type="submit" class="btn">Login</button></a>
+          </div>
+
+          <label class="signup">Don't have a account? - <a href="#"><span>Sign Up &#8594;</span></a></label>
+
+        
+      </div>
+
+  </body>
+
+</html>
